@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login2explore Project Management Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Project Management Form</h2>
+        <form id="projForm" method="post">
+            <div class="form-group">
+                <span><label for="projId">Project ID:</label><label id="projIdMsg"></label></span>
+                <input type="text" class="form-control" name="projId" id="projId" placeholder="Enter Project ID" required onchange="getProj()">
+            </div>
+            <div class="form-group">
+                <label for="projName">Project Name:</label>
+                <input type="text" class="form-control" id="projName" placeholder="Enter Project Name" name="projName">
+            </div>
+            <div class="form-group">
+                <label for="projTo">Assigned to:</label>
+                <input type="text", class="form-control", id="projTo", placeholder="Enter Project Assigned To" name="projTo">
+            </div>
+            <div class="form-group">
+                <label for="projDate">Assignment date:</label>
+                <input type="date", class="form-control", id="projDate", placeholder="Enter Project Date" name="projDate">
+            </div>
+            <div class="form-group">
+                <label for="projDeadline">Deadline:</label>
+                <input type="date", class="form-control", id="projDeadline", placeholder="Enter Project Deadline" name="projDeadline">
+            </div>
+            <div class="button-cont">
+                <input type="button" class="btn btn-primary" value="Save" id="save" onclick="saveData()">
+                <input type="button" class="btn btn-primary" value="Change" id="change" onclick="changeData()">
+                <input type="button" class="btn btn-primary" value="Reset" id="reset" onclick="resetForm()">
+            </div>
+        </form>
+    </div>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
