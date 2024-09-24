@@ -3,6 +3,9 @@
 ## Description
 > A simple form for project management using one of the newest, fastest, most efficient architecture of database, called JSONpoweredDB
 
+## How to use
+Click on : (https://nikhil011205.github.io/Project_Management_JSONpowerDB/)
+
 ## Benefits of using JsonPowerDB
 * Simple to use
 * Easy to maintain (Schema free)
